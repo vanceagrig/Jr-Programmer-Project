@@ -21,6 +21,10 @@ public class UIMainScene : MonoBehaviour
     protected IUIInfoContent m_CurrentContent;
     protected List<Building.InventoryEntry> m_ContentBuffer = new List<Building.InventoryEntry>();
 
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     private void Awake()
     {
